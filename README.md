@@ -1,1 +1,2 @@
-# lindon-ico-website
+# ico-website
+
