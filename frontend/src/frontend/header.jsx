@@ -45,17 +45,45 @@ export default function Header(props) {
                             <li className={props.activeHeader == "Login" ? `nav-item active` : `nav-item`}>
                                 <a className="nav-link" href="/login">Login</a>
                             </li>
-                            <li className={props.activeHeader == "DropDown" ? `nav-item active` : `nav-item`}>
+                            <li className={props.activeHeader == "Magazine" ? `nav-item active` : `nav-item`}>
+                                <a className="nav-link" href="/">Magazine</a>
+                            </li>
+                            <li className={props.activeHeader == "Ozone" ? `nav-item active` : `nav-item`}>
+                                <a className="nav-link" href="https://ozonewatch.gsfc.nasa.gov/">Ozone</a>
+                            </li>
+                            <li className={props.activeHeader == "DropDown" ? `nav-item active` : `nav-item`} style={{ marginRight: "-25px" }}>
 
                                 {/* <a className="nav-link" href="/testing">Dropdown</a> */}
 
                                 {/* bitcash and Xcash link */}
                                 <div class="dropdown show  " >
+                                    <a className="btn bg-transparent dropdown-toggle" href="videos/commerja-1080p-220405.mp4" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fourm</a>
+
+                                    <div class="justify-content-start cont header dropdown-menu row" aria-labelledby="dropdownMenuLink" style={{ backgroundColor: '#131415' }}>
+                                        <div className="col"><a className="p-2 bd-highlight col-2" href="/Bitcash">Vote</a></div>
+                                        {/* <div className="col"> <a className="p-2 bd-highlight col-2" href="/Xcash">XCa$h</a></div> */}
+                                    </div>
+
+                                </div>
+
+
+                                {/* explainary  video  here */}
+                                {/* <a href="videos/commerja-1080p-220405.mp4">Tokens</a> */}
+
+                            </li>
+                            <li className={props.activeHeader == "DropDown" ? `nav-item active` : `nav-item`} style={{ marginRight: "-25px" }}>
+
+                                {/* <a className="nav-link" href="/testing">Dropdown</a> */}
+
+                                {/* bitcash and Xcash link */}
+                                <div class="dropdown show " >
                                     <a className="btn bg-transparent dropdown-toggle" href="videos/commerja-1080p-220405.mp4" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tokens</a>
 
                                     <div class="justify-content-start cont header dropdown-menu row" aria-labelledby="dropdownMenuLink" style={{ backgroundColor: '#131415' }}>
                                         <div className="col"><a className="p-2 bd-highlight col-2" href="/Bitcash">BitCa$h</a></div>
                                         <div className="col"> <a className="p-2 bd-highlight col-2" href="/Xcash">XCa$h</a></div>
+                                        <div className="col"> <a className="p-2 bd-highlight col-2" href="/">NFT's</a></div>
+
 
                                     </div>
 

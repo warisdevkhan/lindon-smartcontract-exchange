@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Ico from './frontend/Ico';
+import Ico from './frontend/Ico2';
 import Home from './frontend/Home';
 import Login from './frontend/Login';
 import Register from './frontend/Register';
@@ -15,6 +15,7 @@ import Term_of_use from './frontend/Term_of_use';
 import Privacy_policy from './frontend/privacy-policy';
 import Frequntely_asked_question from './frontend/Frequntely-asked-question';
 import Xcash from './frontend/Xcash/Xcash';
+import Bitcash from './frontend/Bitcash/Bitcash';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/privacy-policy" element={<Privacy_policy />} />
         <Route path="/faq" element={<Frequntely_asked_question />} />
         <Route path="/Xcash" element={<Xcash />} />
+        <Route path="/Bitcash" element={<Bitcash />} />
       </Routes>
     </BrowserRouter>
   );
