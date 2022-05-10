@@ -17,6 +17,7 @@
  * phrase from a file you've .gitignored so it doesn't accidentally become public.
  *
  */
+
 require("dotenv").config();
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 //
@@ -45,6 +46,7 @@ module.exports = {
       host: "127.0.0.1", // Localhost (default: none)
       port: 8545, // Standard Ethereum port (default: none)
       network_id: "*", // Any network (default: none)
+      gasPrice: 6000000000, // 7 gwei (in wei) (default: 100 gwei)
     },
     // Another network with more advanced options...
     // advanced: {
@@ -57,13 +59,30 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    SmartBCH_Testnet: {
+    WBCH_mainnet: {
       provider: () =>
-        new HDWalletProvider(mnemonic, `https://moeing.tech:9545`),
-      network_id: 10000, // SmartBCH's id
-      gas: 1000000, // SmartBCH has a lower block limit than mainnet
+        new HDWalletProvider(
+          mnemonic,
+          `https://smartbch.fountainhead.cash/mainnet`
+        ),
+      network_id: 56, // BSC's id
       confirmations: 2, // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+      // gas: 14866149,
+      gasPrice: 5000000000, // 5 gwei (in wei) (default: 100 gwei)
+      skipDryRun: false, // Skip dry run before migrations? (default: false for public nets )
+    },
+    BSC_Testnet: {
+      provider: () =>
+        new HDWalletProvider(
+          mnemonic,
+          `https://data-seed-prebsc-1-s1.binance.org:8545/`
+        ),
+      network_id: 97, // BSC's id
+      gas: 3000000, // BSC has a lower block limit than mainnet
+      confirmations: 2, // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+      gasPrice: 30000000000, // 20 gwei (in wei) (default: 100 gwei)
       skipDryRun: false, // Skip dry run before migrations? (default: false for public nets )
     },
     ropsten: {
@@ -73,9 +92,22 @@ module.exports = {
           `https://eth-ropsten.alchemyapi.io/v2/2akp_lWFBFMU4Oa8aoYgTf8McCsDB7cu`
         ),
       network_id: 3, // Ropsten's id
-      gas: 8000000, // Ropsten has a lower block limit than mainnet
+      gas: 3000000, // Ropsten has a lower block limit than mainnet
       confirmations: 2, // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+      skipDryRun: false, // Skip dry run before migrations? (default: false for public nets )
+    },
+    kovan: {
+      provider: () =>
+        new HDWalletProvider(
+          mnemonic,
+          `https://eth-kovan.alchemyapi.io/v2/g7-Gx1GN28yF9tewUUiSKZTyFPW5TgWj`
+        ),
+      network_id: 42, // kovan's id
+      gas: 30000000, // kovan has a lower block limit than mainnet
+      confirmations: 2, // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)/ zx
+      gasPrice: 2000000000, // 20 gwei (in wei) (default: 100 gwei)
       skipDryRun: false, // Skip dry run before migrations? (default: false for public nets )
     },
     // Useful for private networks
@@ -85,7 +117,11 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
   },
-  plugins: ["solidity-coverage", "truffle-contract-size"],
+  plugins: [
+    "solidity-coverage",
+    "truffle-contract-size",
+    "truffle-plugin-verify",
+  ],
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
@@ -128,4 +164,7 @@ module.exports = {
   //   }
   // }
   // }
+  api_keys: {
+    bscscan: process.env.BSCSCAN_API,
+  },
 };

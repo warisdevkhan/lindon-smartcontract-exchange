@@ -31,17 +31,12 @@ contract DividendPayingToken is
     using SafeMathUint for uint256;
     using Address for address;
 
-    // TODO: Change it to SEP20 WBCH address before deploying. (SEP20 WBCH: 0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04)
-    address public immutable WBCH =
-        address(0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04);
-
-    // TODO: Change it to SEP20 WBCH address before deploying. (SEP20 MIST: 0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129)
-    address public immutable MIST =
-        address(0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129);
-
-    // TODO: Change it to SEP20 WBCH address before deploying. (SEP20 LAW: 0x0b00366fBF7037E9d75E4A569ab27dAB84759302)
     address public immutable LAW =
         address(0x0b00366fBF7037E9d75E4A569ab27dAB84759302);
+    address public immutable MIST =
+        address(0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129);
+    address public immutable WBCH =
+        address(0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04);
 
     // With `magnitude`, we can properly distribute dividends even if the amount of received ether is small.
     // For more discussion about choosing the value of `magnitude`,
@@ -100,7 +95,7 @@ contract DividendPayingToken is
                 _withdrawableDividend
             );
             emit DividendWithdrawn(user, _withdrawableDividend);
-            bool success = IERC20(WBCH).transfer(user, _withdrawableDividend);
+            bool success = IERC20(LAW).transfer(user, _withdrawableDividend);
 
             if (!success) {
                 withdrawnDividends[user] = withdrawnDividends[user].sub(

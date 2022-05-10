@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Ico from './frontend/Ico2';
+import Ico from './frontend/Ico';
 import Home from './frontend/Home';
 import Login from './frontend/Login';
 import Register from './frontend/Register';

@@ -483,7 +483,7 @@ ul.social-media-header {
 }
 
 #nav-top ul.navbar-nav {
-    width: 72%;
+    width: 77%;
     justify-content: end;
 }
 
@@ -527,6 +527,12 @@ position: relative;z-index: 1;}
 
 .login-sec {
     margin: 50px 0;
+    position: relative;
+    min-height: 700px;
+}
+.login-sec2 {
+    /* margin: 50px 0; */
+    margin: 140px 0;
     position: relative;
     min-height: 700px;
 }
@@ -841,7 +847,15 @@ ul.audio-sec {
     margin: 0 auto;
 }
 
-
+.Term_of_use{
+    padding-top: 145px ;  
+  }
+  .Term_of_use-text-box h2{
+       font-family: 'Bebas Neue';
+      font-size: 31px;
+      line-height: 70px;
+      font-weight: 100;
+  }
 
 
 
@@ -893,6 +907,23 @@ body.bg-about .copyright-wrap {border-color: #fff;}
 .bg-about img {
     width: 100%;
 }
+
+ /*Faq section  */
+ .Faq-section{
+    padding-top: 200px;
+}      
+.Faq-anchor{
+   
+    color: #f9f9f9;
+}      
+.faq-topic{
+  padding-bottom: 20px;
+}
+.faq-buttons{
+  background-color:#ABABAB;
+}
+
+
 
 
 

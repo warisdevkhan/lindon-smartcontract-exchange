@@ -41,11 +41,10 @@ contract BitcashDividendTracker is Ownable, DividendPayingToken {
 
     constructor()
         DividendPayingToken(
-            "BitcashTokens_Dividend_Tracker",
-            "BitcashTokens_Dividend_Tracker"
+            "Bitcash_Dividend_Tracker",
+            "Bitcash_Dividend_Tracker"
         )
     {
-        // TODO: Change it to 3600 before deploying to mainnnet.
         claimWait = 3600;
         minimumTokenBalanceForDividends = 500 * (10**18);
     }
@@ -55,13 +54,13 @@ contract BitcashDividendTracker is Ownable, DividendPayingToken {
         address,
         uint256
     ) internal pure override {
-        require(false, "BitcashTokens_Dividend_Tracker: No transfers allowed");
+        require(false, "Bitcash_Dividend_Tracker: No transfers allowed");
     }
 
     function withdrawDividend() public pure override {
         require(
             false,
-            "BitcashTokens_Dividend_Tracker: withdrawDividend disabled. Use the 'claim' function on the main BitcashTokens contract."
+            "Bitcash_Dividend_Tracker: withdrawDividend disabled. Use the 'claim' function on the main BitcashTokens contract."
         );
     }
 
@@ -78,11 +77,11 @@ contract BitcashDividendTracker is Ownable, DividendPayingToken {
     function updateClaimWait(uint256 newClaimWait) external onlyOwner {
         require(
             newClaimWait >= 3600 && newClaimWait <= 86400,
-            "BitcashTokens_Dividend_Tracker: claimWait must be updated to between 1 and 24 hours"
+            "Bitcash_Dividend_Tracker: claimWait must be updated to between 1 and 24 hours"
         );
         require(
             newClaimWait != claimWait,
-            "BitcashTokens_Dividend_Tracker: Cannot update claimWait to same value"
+            "Bitcash_Dividend_Tracker: Cannot update claimWait to same value"
         );
         emit ClaimWaitUpdated(newClaimWait, claimWait);
         claimWait = newClaimWait;

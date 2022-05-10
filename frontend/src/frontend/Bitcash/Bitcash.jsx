@@ -47,7 +47,7 @@ export default function Bitcash() {
                                 <a href="#" className="logo"><img src="images/Logo.png" /></a>
                                 <div style={{ paddingTop: "100px" }}>
                                     <video height={500} controls>
-                                        <source src="videos/2.mp4" type="video/mp4" />
+                                        <source src="videos/1.mp4" type="video/mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                     <div className="heading-sec text-center">
@@ -73,10 +73,6 @@ export default function Bitcash() {
                             <td className="bg-mainB">
 
                                 {page === 1 ? (<BitcashFirstPage></BitcashFirstPage>) : ("")}
-
-
-
-
 
                                 {/* <p className="Bp"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and

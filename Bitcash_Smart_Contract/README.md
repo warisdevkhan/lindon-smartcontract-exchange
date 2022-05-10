@@ -1,4 +1,4 @@
-<center><b><u> AIR 4 LIFE FOUNDATION ( BiTCa$h ) </u></b></center>
+<center><b><u> AIR 4 LIFE FOUNDATION ( X$wapp) </u></b></center>
 
 </br>
 </br>
@@ -12,12 +12,12 @@
 </br>
 
 **Token Name: Bitcash** </br>
-**Ticker: BiTCa\$h** </br>
+**Ticker: X\$wapp** </br>
 **Total Supply: 1,000,000,000,000,000** </br>
 
 ## Features
 
-- Max Supply: 1,000,000,000,000,000 BiTCa\$h
+- Max Supply: 1,000,000,000,000,000 X\$wapp
 
 - 500,000,000,000 in a living trust address for various uses
 
@@ -25,15 +25,15 @@
 
 - 5,000,000,000,000 for Pre-Sale on DxSale
 
-- Any BiTCa$h that was not allocated to presale and IDCO but not sold will be permanently locked inside Reserve Vault address
+- Any X$wapp that was not allocated to presale and IDCO but not sold will be permanently locked inside Reserve Vault address
 
 - 200,000,000,000,000 Locked Liquidity until April 8th, 2026
 
 - 145,000,000,000,000 Locked in team wallet, DxSale Team Wallet Address │ DxSale Vesting Contract We initially locked this address until June 1st, 2022. Then the team wallet will be re-locked until February 24th, 2024.
 
-- The BitCa\$h we locked inside the DxSale address will be unlocked at a slow pace of 1% every 10 days for 1,000 days as demands and market conditions dictate
+- The X\$wapp we locked inside the DxSale address will be unlocked at a slow pace of 1% every 10 days for 1,000 days as demands and market conditions dictate
 
-- **Tx Fee:** Any transaction that involves BitCa\$h to cash or cash to BitCa\$h that is converted to Bitcoin Cash will incur nominal fee of 2% on all transfer transaction but not on any purchases from merchants. These transaction fees will be sent to an address where it will be converted to Bitcoin Ca\$h and BITCOIN for equal redistribution to all hold of BitCa\$h this will be permanently locked in the terms of the smart contract
+- **Tx Fee:** Any transaction that involves X\$wapp to cash or cash to X\$wapp that is converted to Bitcoin Cash will incur nominal fee of 2% on all transfer transaction but not on any purchases from merchants. These transaction fees will be sent to an address where it will be converted to Bitcoin Ca\$h and BITCOIN for equal redistribution to all hold of X\$wapp this will be permanently locked in the terms of the smart contract
 
 - Only the 120 trillion tokens that we originally sent can ever be released from the address
 

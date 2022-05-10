@@ -54,7 +54,7 @@ export default function Login() {
             <div className="header-btm">
                 <img src="images/header.png"></img>
             </div>
-            <div className="login-sec">
+            <div className="login-sec2">
                 <div className="cust-container">
                     <div className="inner-login-sec">
                         <a href="#" className="logo"><img src="images/Logo.png" /></a>

@@ -65,7 +65,7 @@ export default function Home() {
                                 <li><a href="#"><img src="images/facebook.svg" /></a></li>
                                 <li><a href="#"><img src="images/twitter-y.svg" /></a></li>
                                 <li><a href="#"><img src="images/insta.svg" /></a></li>
-                                <li><audio id="myAudio" src="videos/Life_intro.mp3" autoPlay="autoplay" />
+                                <li><audio id="myAudio" src="videos/new-websong.mp3" autoPlay="autoplay" />
                                     <a onclick="togglePlay()" className="play"><span className="mute"><i className="fa fa-volume-down" /><i className="fa fa-volume-mute" /></span></a></li>
                             </ul>
                         </div>
