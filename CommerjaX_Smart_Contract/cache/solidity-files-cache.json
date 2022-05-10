@@ -1,0 +1,1495 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\BTCBTracker.sol": {
+      "lastModificationDate": 1649923211524,
+      "contentHash": "35485ad4b8d1e842c9a1ec897fd20f06",
+      "sourceName": "contracts/BTCBTracker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CommerjaXDividendTracker.sol",
+        "./SafeMathInt.sol",
+        "./IterableMapping.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BTCBTracker"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\CommerjaXDividendTracker.sol": {
+      "lastModificationDate": 1650011369445,
+      "contentHash": "6b903ff6749b4bceac5ef4ca6820c093",
+      "sourceName": "contracts/CommerjaXDividendTracker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DividendPayingToken.sol",
+        "./SafeMathInt.sol",
+        "./IterableMapping.sol",
+        "../node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CommerjaXDividendTracker"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\SafeMathInt.sol": {
+      "lastModificationDate": 1646751375936,
+      "contentHash": "5c93abb47575af78f8a8ee08c636f359",
+      "sourceName": "contracts/SafeMathInt.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathInt"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\IterableMapping.sol": {
+      "lastModificationDate": 1646752032736,
+      "contentHash": "8ea94adffb2882dc4b409b80fc7da6ee",
+      "sourceName": "contracts/IterableMapping.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IterableMapping"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SafeMath.sol": {
+      "lastModificationDate": 1648745654312,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1648745646249,
+      "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\DividendPayingToken.sol": {
+      "lastModificationDate": 1650032133891,
+      "contentHash": "301ab71d70476341b0266eec243a14f1",
+      "sourceName": "contracts/DividendPayingToken.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DividendPayingTokenInterface.sol",
+        "./DividendPayingTokenOptionalInterface.sol",
+        "./SafeMathUint.sol",
+        "./SafeMathInt.sol",
+        "../node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol",
+        "../node_modules/@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DividendPayingToken"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1648745653775,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\DividendPayingTokenInterface.sol": {
+      "lastModificationDate": 1649921038866,
+      "contentHash": "2745a759a58807a805ccc044bbeafa62",
+      "sourceName": "contracts/DividendPayingTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DividendPayingTokenInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\DividendPayingTokenOptionalInterface.sol": {
+      "lastModificationDate": 1646751355937,
+      "contentHash": "e3e6ae42a155829058576c1f86c52298",
+      "sourceName": "contracts/DividendPayingTokenOptionalInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DividendPayingTokenOptionalInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\SafeMathUint.sol": {
+      "lastModificationDate": 1646642797852,
+      "contentHash": "527b82ba18f2ef88d05904f428099668",
+      "sourceName": "contracts/SafeMathUint.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathUint"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1648745649289,
+      "contentHash": "bab063ddd80e9cc9e313361fef7ef07f",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1648745652591,
+      "contentHash": "a44d1a099633876550ad2476b21bafbe",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1648745652660,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1648745647108,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\CommerjaX.sol": {
+      "lastModificationDate": 1651484576219,
+      "contentHash": "0cf7e4d486de036300a57ad695fbb8ae",
+      "sourceName": "contracts/CommerjaX.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ISEP20.sol",
+        "./BUSDTracker.sol",
+        "./BTCBTracker.sol",
+        "./ETHBTracker.sol",
+        "./IterableMapping.sol",
+        "./PopulationTracker.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol",
+        "../node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "../node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "../node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CommerjaX"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\ISEP20.sol": {
+      "lastModificationDate": 1649860504790,
+      "contentHash": "ab46477d960e404d2e10b5e0604a95b1",
+      "sourceName": "contracts/ISEP20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ISEP20"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\BUSDTracker.sol": {
+      "lastModificationDate": 1650032138084,
+      "contentHash": "3d565f9445add8db9948c0e4d8a4627c",
+      "sourceName": "contracts/BUSDTracker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CommerjaXDividendTracker.sol",
+        "./SafeMathInt.sol",
+        "./IterableMapping.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BUSDTracker"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\ETHBTracker.sol": {
+      "lastModificationDate": 1649923191909,
+      "contentHash": "b26af131ea39a0f4a2b8d75b41f3b388",
+      "sourceName": "contracts/ETHBTracker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CommerjaXDividendTracker.sol",
+        "./SafeMathInt.sol",
+        "./IterableMapping.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ETHBTracker"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\PopulationTracker.sol": {
+      "lastModificationDate": 1651231709687,
+      "contentHash": "81201cb3c23c9840aa350cfeaf9bd144",
+      "sourceName": "contracts/PopulationTracker.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../node_modules/@chainlink/contracts/src/v0.8/ChainlinkClient.sol",
+        "../node_modules/@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.7"
+      ],
+      "artifacts": [
+        "PopulationTracker"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@uniswap\\v2-core\\contracts\\interfaces\\IUniswapV2Factory.sol": {
+      "lastModificationDate": 1648745638261,
+      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@uniswap\\v2-periphery\\contracts\\interfaces\\IUniswapV2Router02.sol": {
+      "lastModificationDate": 1648745648788,
+      "contentHash": "3fd36426274a5b35f7e702f87ba08a8e",
+      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router02"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\ChainlinkClient.sol": {
+      "lastModificationDate": 1651231753520,
+      "contentHash": "6af479cbde42f1a7225c9cebc6e32239",
+      "sourceName": "@chainlink/contracts/src/v0.8/ChainlinkClient.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Chainlink.sol",
+        "./interfaces/ENSInterface.sol",
+        "./interfaces/LinkTokenInterface.sol",
+        "./interfaces/ChainlinkRequestInterface.sol",
+        "./interfaces/OperatorInterface.sol",
+        "./interfaces/PointerInterface.sol",
+        "./vendor/ENSResolver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChainlinkClient"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\Chainlink.sol": {
+      "lastModificationDate": 1648745655798,
+      "contentHash": "9dc050539cdf1579d5650d41d0df9ec2",
+      "sourceName": "@chainlink/contracts/src/v0.8/Chainlink.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./vendor/CBORChainlink.sol",
+        "./vendor/BufferChainlink.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Chainlink"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\ENSInterface.sol": {
+      "lastModificationDate": 1648745668886,
+      "contentHash": "06b6aefcae95de6d1597ad8e1d73a08b",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/ENSInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ENSInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\LinkTokenInterface.sol": {
+      "lastModificationDate": 1648745668990,
+      "contentHash": "da5a0c3bd86c896f6a407f909c57edf3",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LinkTokenInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\ChainlinkRequestInterface.sol": {
+      "lastModificationDate": 1648745668880,
+      "contentHash": "14407a6ead15cff8a0e0a7f8037c68f5",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChainlinkRequestInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\OperatorInterface.sol": {
+      "lastModificationDate": 1648745669011,
+      "contentHash": "e1822c36361fc3a26b5a68df3ddab15d",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/OperatorInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OracleInterface.sol",
+        "./ChainlinkRequestInterface.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OperatorInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\PointerInterface.sol": {
+      "lastModificationDate": 1648745669114,
+      "contentHash": "27da4b2007d200dd5afff31dbf31ac99",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/PointerInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PointerInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vendor\\ENSResolver.sol": {
+      "lastModificationDate": 1648745670465,
+      "contentHash": "24a98b0606654e662097eed9ffa91a11",
+      "sourceName": "@chainlink/contracts/src/v0.8/vendor/ENSResolver.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ENSResolver"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vendor\\CBORChainlink.sol": {
+      "lastModificationDate": 1648745670074,
+      "contentHash": "99b3ee2c29bc0d1a5cba583d9e8d835e",
+      "sourceName": "@chainlink/contracts/src/v0.8/vendor/CBORChainlink.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BufferChainlink.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.19"
+      ],
+      "artifacts": [
+        "CBORChainlink"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vendor\\BufferChainlink.sol": {
+      "lastModificationDate": 1648745670059,
+      "contentHash": "52ac6f99fb0635751ae4ed11139878fd",
+      "sourceName": "@chainlink/contracts/src/v0.8/vendor/BufferChainlink.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BufferChainlink"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\OracleInterface.sol": {
+      "lastModificationDate": 1648745669050,
+      "contentHash": "6283e42024961596926c2b5015eef8e0",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/OracleInterface.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OracleInterface"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@uniswap\\v2-periphery\\contracts\\interfaces\\IUniswapV2Router01.sol": {
+      "lastModificationDate": 1648745648722,
+      "contentHash": "95d8729b2c698dc663322167b3c085fe",
+      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\TokenVesting.sol": {
+      "lastModificationDate": 1650261185200,
+      "contentHash": "621a5d535b5638456922bca4e2b123f3",
+      "sourceName": "contracts/TokenVesting.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TokenVesting"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
+      "lastModificationDate": 1648745654257,
+      "contentHash": "76814c83c32552ed2b521c816b4d801a",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\security\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1648745653994,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
+      "lastModificationDate": 1648745653596,
+      "contentHash": "339b9793dcbd7b5d55af725ef47de74c",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\CommerjaX_ICO.sol": {
+      "lastModificationDate": 1650286190629,
+      "contentHash": "acc21058a76fc885cc22b07053268d2d",
+      "sourceName": "contracts/CommerjaX_ICO.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../node_modules/@openzeppelin/contracts/access/Ownable.sol",
+        "../node_modules/@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CommerjaX_ICO",
+        "Token"
+      ]
+    },
+    "C:\\Users\\cis\\workspace\\ico-website\\CommerjaX_Smart_Contract\\contracts\\Migrations.sol": {
+      "lastModificationDate": 1646751468081,
+      "contentHash": "50b3b1dc92806dc8f604fc8c5c65518f",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    }
+  }
+}
