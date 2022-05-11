@@ -37,27 +37,21 @@ export default function Bitcash() {
         return (
             <>
                 <div>
-
-                    <div className="header-btm">
-                        <img src="images/header.png"></img>
-                    </div>
-                    <div className="login-sec">
+                <div>
+                    <div className="login-sec video">
                         <div className="cust-container">
-                            <div className="inner-login-sec">
-                                <a href="#" className="logo"><img src="images/Logo.png" /></a>
-                                <div style={{ paddingTop: "100px" }}>
-                                    <video height={500} controls>
-                                        <source src="videos/1.mp4" type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div className="heading-sec text-center">
-                                        <button type="submit" className="btn btn-more" onClick={() => { setVideoCount(1) }} >White Paper</button>
-                                    </div>
-                                    <img src="images/services.png" className="border-b" style={{ marginTop: "10px" }} />
-                                </div>
+                            <video controls >
+                                <source src="videos/1.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <div className="heading-sec text-center">
+                                <button type="submit" className="btn btn-more" onClick={() => { setVideoCount(1) }} >White Paper</button>
                             </div>
+                            <img src="images/services.png" className="border-b" style={{ marginTop: "10px" }} />
                         </div>
-                    </div>
+                    </div>                  
+
+                </div>
 
                 </div>
             </>

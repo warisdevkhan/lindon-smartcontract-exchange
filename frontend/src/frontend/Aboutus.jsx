@@ -152,6 +152,14 @@ export default function Aboutus() {
                         </div>
                     </div>
                 </div>
+                <div class="d-flex flex-column bd-highlight mb-3 justify-content-start cont">
+                    <div class="p-2 bd-highlight"><a className="footerlinks" href="./term-of-use">Term of Use</a></div>
+                    <div class="p-2 bd-highlight"><a className="footerlinks" href="./privacy-policy">Privacy Policy</a></div>
+                    <div class="p-2 bd-highlight"><a className="footerlinks" href="/faq">Frequently Asked Questions</a></div>
+
+                </div>
+
+           
                 <div className="copyright-wrap text-center">
                     <div className="container">
                         © Lindon ICO, 2021
