@@ -196,7 +196,7 @@ header {
 }
 
 .downloadWhitePaperText{
-    margin-top: 23px;
+    margin-top: 19px;
 }
 
 .banner-sec .inner-banner-sec .img-box img {
@@ -639,7 +639,7 @@ input:placeholder {
 .roadmap-sec .btn.btn-more {
     width: 100%;
     max-width: 305px;
-    margin: 70px auto 0;
+    margin: 15px auto 0;
 }
 
 
@@ -653,7 +653,7 @@ input:placeholder {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 190px 50px 20px;
+    /* padding: 190px 50px 20px; */
     /* height: 90vh; */
     overflow: hidden;
 }
@@ -939,6 +939,11 @@ body.bg-about .copyright-wrap {border-color: #fff;}
     top: 0;
 }
 
+@media (max-width: 600px) {
+    .home-sec:after {
+        height: 181% !important;
+    }
+  }
 
 .about-sec.home-about-sec.home-video-banner:after {content: "";
     background-color: rgb(0 126 255 / 40%);
@@ -974,4 +979,12 @@ footer.footer {
 }
 .missionInfoText{
     color: black;
+    text-align: justify;
 }
+
+
+@media (max-width: 600px) {
+    .video-block2 {
+        height: 0%;
+    }
+  }
