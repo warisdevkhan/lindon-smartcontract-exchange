@@ -17,8 +17,11 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "user",
     ref: "Role",
+  },
+  kycStatus: {
+    type: String,
+    default: "Not Completed"
   }
 }, { timestamps: true })
-
 
 module.exports = mongoose.model('User', userSchema)

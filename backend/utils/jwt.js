@@ -7,7 +7,12 @@ const createToken = payload => {
 }
 
 const verifyToken = token => {
-  return jwt.verify(token, jwtSecret)
+  try {
+    
+    return jwt.verify(token, jwtSecret)
+  } catch (error) {
+    return false
+  }
 }
 
 module.exports = { createToken, verifyToken }

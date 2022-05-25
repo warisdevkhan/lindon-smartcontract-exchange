@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function footer() {
+export default function footer({isDefaultColor}) {
     return (
-        <footer className="footer">
+        <footer className={isDefaultColor ? "footer defaultFooter" : "footer"}>
             <div className="foter-wrap">
                 <div className="container">
                     <div className="row">
@@ -25,10 +25,10 @@ export default function footer() {
 
 
             <div className="container footerLine">
-                <div class="d-flex flex-column bd-highlight mb-3 justify-content-start cont">
-                    <div class="p-2 bd-highlight"><a className="footerlinks" href="./term-of-use">Term of Use</a></div>
-                    <div class="p-2 bd-highlight"><a className="footerlinks" href="./privacy-policy">Privacy Policy</a></div>
-                    <div class="p-2 bd-highlight"><a className="footerlinks" href="/faq">Frequently Asked Questions</a></div>
+                <div className="d-flex flex-column bd-highlight mb-3 justify-content-start cont">
+                    <div className="p-2 bd-highlight"><a className="footerlinks" href="./term-of-use">Term of Use</a></div>
+                    <div className="p-2 bd-highlight"><a className="footerlinks" href="./privacy-policy">Privacy Policy</a></div>
+                    <div className="p-2 bd-highlight"><a className="footerlinks" href="/faq">Frequently Asked Questions</a></div>
 
                 </div>
 

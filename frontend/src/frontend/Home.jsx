@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./footer";
 import Header from "./header";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 export default function Home() {
     AOS.init();
     function learnMore() {
@@ -15,32 +16,32 @@ export default function Home() {
             <header>
                 <nav className="navbar navbar-expand-lg">
                     <div className="container">
-                        <a className="navbar-brand p-0" href="#"><img src="images/Logo.png" /></a>
+                        <Link className="navbar-brand p-0" to="/"><img src="images/Logo.png" /></Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-top">
                             <span className="navbar-toggler-icon" />
                         </button>
                         <div className="collapse navbar-collapse justify-content-end" id="nav-top">
                             <ul className="navbar-nav">
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="/">Home</a>
+                                    <Link className="nav-link" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/aboutus">About Us</a>
+                                    <Link className="nav-link" to="/mission">Mission</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/ico">ICO</a>
+                                    <Link className="nav-link" to="/ico">ICO</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Magazine</a>
+                                    <a className="nav-link" href="https://www.global-pulse.org/" target="_blank">Magazine</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="https://ozonewatch.gsfc.nasa.gov/">Ozone</a>
+                                    <a className="nav-link" href="https://ozonewatch.gsfc.nasa.gov/" target="_blank">Ozone</a>
                                 </li>
                                 <li className="nav-item" style={{ marginRight: "-25px" }}>
-                                    <div class="dropdown show  " >
+                                    <div className="dropdown show  " >
                                         <a className="btn bg-transparent dropdown-toggle" href="videos/commerja-1080p-220405.mp4" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forum</a>
 
-                                        <div class="justify-content-start cont header dropdown-menu row" aria-labelledby="dropdownMenuLink" style={{ backgroundColor: '#131415' }}>
+                                        <div className="justify-content-start cont header dropdown-menu row" aria-labelledby="dropdownMenuLink" style={{ backgroundColor: '#131415' }}>
                                             <div className="col"><a className="p-2 bd-highlight col-2" href="/Bitcash">Vote</a></div>
                                             {/* <div className="col"> <a className="p-2 bd-highlight col-2" href="/Xcash">XCa$h</a></div> */}
                                         </div>
@@ -48,14 +49,13 @@ export default function Home() {
                                     </div>
                                 </li>
                                 <li className="nav-item" style={{ marginRight: "-25px" }}>
-                                    <div class="dropdown show  " >
+                                    <div className="dropdown show  " >
                                         <a className="btn bg-transparent dropdown-toggle" href="videos/commerja-1080p-220405.mp4" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tokens</a>
 
-                                        <div class="justify-content-start cont header dropdown-menu row" aria-labelledby="dropdownMenuLink" style={{ backgroundColor: '#131415' }}>
-                                            <div className="col"><a className="p-2 bd-highlight col-2" href="/Bitcash">BitCa$h</a></div>
-                                            <div className="col"> <a className="p-2 bd-highlight col-2" href="/Xcash">XCa$h</a></div>
-                                            <div className="col"> <a className="p-2 bd-highlight col-2" href="/">NFT's</a></div>
-
+                                        <div className="justify-content-start cont header dropdown-menu row" aria-labelledby="dropdownMenuLink" style={{ backgroundColor: '#131415' }}>
+                                            <div className="col"> <Link className="p-2 bd-highlight col-2" to="/Xcash">X$Wapp</Link></div>
+                                            <div className="col"><Link className="p-2 bd-highlight col-2" to="/Bitcash">BitCa$h</Link></div>
+                                            <div className="col"> <a className="p-2 bd-highlight col-2" href="https://www.nft-xverse.com/" target="_blank">NFT's</a></div>
                                         </div>
 
                                     </div>
@@ -65,16 +65,16 @@ export default function Home() {
                                 <li><a href="#"><img src="images/facebook.svg" /></a></li>
                                 <li><a href="#"><img src="images/twitter-y.svg" /></a></li>
                                 <li><a href="#"><img src="images/insta.svg" /></a></li>
-                                <li><audio id="myAudio" src="videos/new-websong.mp3" autoPlay="autoplay" />
-                                    <a onclick="togglePlay()" className="play"><span className="mute"><i className="fa fa-volume-down" /><i className="fa fa-volume-mute" /></span></a></li>
+                                <li><audio id="myAudio" src="videos/new-websong.mp3" autoPlay />
+                                    <a className="play"><span className="mute"><i className="fa fa-volume-down" /><i className="fa fa-volume-mute" /></span></a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-                {/*  <ul class="audio-sec">
+                {/*  <ul className="audio-sec">
   <li>
     <audio id="myAudio" src="videos/Life_intro.mp3" autoplay="autoplay"></audio>
-    <a onClick="togglePlay()" class="play"><span class="mute"><i class="fa fa-volume-down"></i><i class="fa fa-volume-mute"></i></span></a>
+    <a onClick="togglePlay()" className="play"><span className="mute"><i className="fa fa-volume-down"></i><i className="fa fa-volume-mute"></i></span></a>
   </li>
 </ul> */}
             </header> {/* /header */}
@@ -85,41 +85,54 @@ export default function Home() {
 <source src="videos/Life-intro.mp4" type="video/mp4">
     </video>
      */}
-            {/* <div class="header-btm">
+            {/* <div className="header-btm">
 <img src="images/header.png">
     </div> */}
             <section className="hero-sec home-sec d-flex flex-wrap align-items-center" touching="fixed-sec" id="home-section1">
                 <video id="video-1" className="video-block" width="65%" height={250} poster="images/section-img1.jpg" autoPlay loop muted>
                     <source src="videos/banner-gif.mp4" type="video/mp4" />
                 </video>
-                {/* <div class="bg-gif">
+                {/* <div className="bg-gif">
   <img src="images/banner-gif.gif">
 </div> */}
-                <div className="home-sec-title">
+                {/* <div className="home-sec-title">
                     <div className="container">
                         <div className="inner-banner-sec">
                             <div className="text-box" data-aos-duration={1000} data-aos="fade-up">
                                 <div className="text-inner-box text-center">
                                     <h1>Secure crypto solutions and utilizing blockchain technology.</h1>
                                     <p>The first decentralized Marketplace which makes simplifies and standarizes data with blockchain technology. </p>
-                                    <a href="#" className="btn btn-more">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
+                <div className="home-sec-title">
+                    <div className="container">
+                        <div className="inner-banner-sec">
+                            <div className="text-box" data-aos-duration="1000" data-aos="fade-up">
+                                <div className="text-inner-box text-center">
+                                    <h1>AN NGO OPERATING ON A SECURE GLOBAL PLATFORM UTILIZING SMART BLOCKCHAIN TECHNOLOGY AS A SOLUTION</h1>
+                                    <p>Introducing the first Decentralized Autonomous Global Humanitarian Organization (DAGHO), operating on a simple standardized module for the procurement of funding and its transparent disbursement globally, with the utilization of smart contracts and web 3.0 technology, ensuring humanity’s</p>
+                                    <h2>…RIGHT TO LIFE…</h2>
+                                    {/* <a href="#" className="btn btn-more">Learn More</a> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/*  <section class="banner-sec">
-<div class="container">
-  <div class="inner-banner-sec">
-    <div class="text-box" data-aos-duration="1000" data-aos="fade-right" data-aos-easing="ease-in-sine">
-      <div class="text-inner-box">
+            {/*  <section className="banner-sec">
+<div className="container">
+  <div className="inner-banner-sec">
+    <div className="text-box" data-aos-duration="1000" data-aos="fade-right" data-aos-easing="ease-in-sine">
+      <div className="text-inner-box">
          <h1>WORLD FIRST DECENTRALIZED MARKET PLACE WITH BLOCKCHAIN INFRASTRUCTURE</h1>
           <p>The first decentralized Marketplace which makes simplifies and standarizes data with blockchain technology. We provides user-friendly, efficient and secure crypto solutions and utilizing blockchain technology.</p>
-          <a href="#" class="btn btn-more">Download White Paper</a>
+          <a href="#" className="btn btn-more">Download White Paper</a>
       </div>
     </div>
-    <div class="img-box"  data-aos-duration="1000" data-aos="fade-left" data-aos-easing="ease-in-sine">
+    <div className="img-box"  data-aos-duration="1000" data-aos="fade-left" data-aos-easing="ease-in-sine">
      <iframe width="100%" height="400" src="https://www.youtube.com/embed/zdpmOZjx2JM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
@@ -193,7 +206,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="about-sec home-about-sec">
+            <section className="about-sec home-about-sec home-video-banner">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
@@ -204,9 +217,14 @@ export default function Home() {
                         <div className="col-md-6">
                             <div className="about-text-box" data-aos-duration={1000} data-aos="fade-left" data-aos-easing="ease-in-sine">
                                 <h2>about Us</h2>
-                                <p>Air 4 Life Foundation (A4LF) is a legally registered nonprofit founded in Casper, Wyoming USA in December 2021.  A4LF global initiative is focused mainly on the development of an array of innovative programs to drastically reduce Global Air Pollution, by reducing the Carbon footprints and greenhouse gases that directly impact on climate change, which result from the major manufacturing, lumber, and mining concerns. </p>
-                                <a href="#" className="btn btn-more">Learn More</a>
-                            </div>
+                                <p>
+                                    AIR4 LIFE FOUNDATION (A4LF) is a legally registered non-profit organization incorporated in Casper Wyoming, USA in December 2021. A4LF global initiatives are focused on the development and implementation of an array of innovative programs and concepts, which seek to reduce/eliminate worldwide illiteracy of children in developing countries, while also improving the socio-economic welfare of humanity in general. This vision is being accomplished using environmental conservation methods, which will improve the Global Air Quality, by reducing the Carbon footprints, aided by the removal of greenhouse gases which directly impact climate change, utilizing Blockchain Technology and DEFI.
+                                    <a href="javascript:void(0)" id="learn-btn" className="btn btn-more" onClick={learnMore}>Learn More</a>
+                                    <div style={{ display: "none" }} id="next-part">
+                                        Air 4 Life Foundation envisions awakening an understanding within the global community -that by functioning as one unified body, with common objectives, for example the education of all children, empowers humanity in all aspects of life, along with the new revolutionary concept, that “AIR” should be viewed as the single most important commodity necessary for our existence as a race, and for the preservation of all lifeforms on earth, now it can also be used as a viable mechanism meeting the parameters necessary for implementing a single Global Digital Currency, by utilizing Smart Contracts and the underlying Blockchain Technology which it entails. A Global Digital Currency free from governmental influence or control -regulated only by the global community usage of “AIR” as “A RIGHT TO LIFE” … both physically and financially.
+                                    </div>
+                                </p>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -242,7 +260,9 @@ export default function Home() {
                         </li>
                     </ul>
                 </div>
-                <a href="#" className="btn btn-more text-center d-block">Download White Paper</a>
+                {/* <a href="#" className="btn btn-more text-center d-block">Download White Paper</a> */}
+                <a href="images/whitepaper.pdf" target="_blank" className="btn btn-more text-center d-block">Download White Paper</a>
+
             </section>
             {/* footer */}
             <footer className="footer">
@@ -265,17 +285,17 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="container footerLine">
-                <div class="d-flex flex-column bd-highlight mb-3 justify-content-start cont">
-                    <div class="p-2 bd-highlight"><a className="footerlinks" href="./term-of-use">Term of Use</a></div>
-                    <div class="p-2 bd-highlight"><a className="footerlinks" href="./privacy-policy">Privacy Policy</a></div>
-                    <div class="p-2 bd-highlight"><a className="footerlinks" href="/faq">Frequently Asked Questions</a></div>
+                <div className="d-flex flex-column bd-highlight mb-3 justify-content-start cont">
+                    <div className="p-2 bd-highlight"><a className="footerlinks" href="./term-of-use">Term of Use</a></div>
+                    <div className="p-2 bd-highlight"><a className="footerlinks" href="./privacy-policy">Privacy Policy</a></div>
+                    <div className="p-2 bd-highlight"><a className="footerlinks" href="/faq">Frequently Asked Questions</a></div>
 
                 </div>
 
             </div>
                 <div className="copyright-wrap text-center">
                     <div className="container">
-                        © Lindon ICO, 2021
+                        © A4LF 2022
                     </div>
                 </div>
             </footer>

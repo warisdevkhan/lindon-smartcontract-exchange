@@ -18,8 +18,8 @@ export default function Payments(props) {
     const location = useLocation()
     const { amount, getAmount, currency } = location.state
     useEffect(() => {
-        document.title = "Admin :: Dashboard"
-        document.body.classList.add('menu-open');
+        document.title = "Dashboard"
+        // document.body.classList.add('menu-open');
     }, [])
     async function saveDetails(token) {
         const option = {
@@ -219,7 +219,7 @@ export default function Payments(props) {
                                         </div>
                                     </div>
                                     <div className="col-md-12">
-                                        <footer className="text-center">
+                                        <footer className="text-center copyRightMark">
                                             <p>&copy; Lindon ICO, 2021</p>
                                         </footer>
                                     </div>

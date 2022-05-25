@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./footer";
 import Header from "./header";
 import AOS from "aos";
-export default function Home() {
+export default function Ico() {
     AOS.init();
     function learnMore() {
         document.getElementById("learn-btn").style.display = "none"
@@ -14,8 +14,8 @@ export default function Home() {
             <div className="header-btm">
                 <img src="images/header.png" />
             </div>
-            <div className="hero-sec home-sec d-flex flex-wrap align-items-center" touching="fixed-sec" id="home-section1" >
-                <video id="video-1" className="video-block" width="100%" height="745" poster="images/section-img1.jpg" autoPlay loop muted>
+            <div className="hero-sec home-sec d-flex flex-wrap align-items-center home-sec-default" id="home-section1" >
+                <video id="video-1" className="video-block2" width="100%" height="745" poster="images/section-img1.jpg" autoPlay loop muted>
                     <source src={"videos/bg-video.mp4"} type="video/mp4" />
                 </video>
                 <div className="home-sec-title">
@@ -26,14 +26,14 @@ export default function Home() {
                                     <h1>AN NGO OPERATING ON A SECURE GLOBAL PLATFORM UTILIZING SMART BLOCKCHAIN TECHNOLOGY AS A SOLUTION</h1>
                                     <p>Introducing the first Decentralized Autonomous Global Humanitarian Organization (DAGHO), operating on a simple standardized module for the procurement of funding and its transparent disbursement globally, with the utilization of smart contracts and web 3.0 technology, ensuring humanity’s</p>
                                     <h2>…RIGHT TO LIFE…</h2>
-                                    <a href="#" className="btn btn-more">Learn More</a>
+                                    {/* <a href="#" className="btn btn-more">Learn More</a> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="services-sec">
+            <div className="services-sec2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12" data-aos-duration="2000" data-aos="fade-up">
@@ -125,7 +125,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="roadmap-sec">
+            <div className="roadmap-sec2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
@@ -156,9 +156,11 @@ export default function Home() {
                         </li>
                     </ul>
                 </div>
-                <a href="images/A4L Prospectus.pdf" target="_blank" className="btn btn-more text-center d-block">Download White Paper</a>
+                <div className='d-flex downloadWhitePaperText'>
+                <a href="images/whitepaper.pdf" target="_blank" className="btn btn-more text-center m-auto r">Download White Paper</a>
+                </div>
             </div>
-            <Footer />
+            <Footer isDefaultColor={true}/>
         </div>
     );
 }

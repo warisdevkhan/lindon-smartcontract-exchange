@@ -29,6 +29,7 @@ module.exports = async (req, res, next) => {
         )
       }
       req.body['user_id'] = decoded.id;
+      req.body['role'] = decoded.role
       next()
     } else {
       return next(

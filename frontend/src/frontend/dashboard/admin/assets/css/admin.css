@@ -24,6 +24,12 @@ h1, h2, h3, h4, h5, h6 {
      border-radius: 10px;
 }
 
+table.table{
+    color: white;
+    cursor: pointer;
+}
+
+
 /* End reset Css */
 header.theme-header {
      background-color: #000;
@@ -543,7 +549,7 @@ header.theme-header {
 }
 
 .menu-open .content-wrap {
-     width: 100%;
+     /* width: 100%; */
      -webkit-transition: all 0.3s ease-in;
      -o-transition: all 0.3s ease-in;
      -ms-transition: all 0.3s ease-in;
@@ -1594,8 +1600,6 @@ button.close {
 }
 
 
-
-
 }
 
 @media only screen and (max-width:767px) {
@@ -1760,6 +1764,14 @@ footer {
 
 }
 
+
+
+.approvalSection{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
 
 
 

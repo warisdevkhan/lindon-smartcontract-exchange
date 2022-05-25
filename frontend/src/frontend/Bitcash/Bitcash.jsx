@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
+import {useNavigate} from 'react-router-dom'
 import BitcashFirstPage from "./BitcashFirst";
 // import XcashSecondPage from './XcashSecond';
 // import XcashThirdPage from './XcashThird'
@@ -9,7 +10,7 @@ export default function Bitcash() {
 
     const [video, setVideoCount] = useState(0);
 
-    let [count, setcount] = useState(1);
+    let [count, setcount] = useState(0);
 
     let [page, setpage] = useState(1);
 
@@ -32,26 +33,51 @@ export default function Bitcash() {
 
     }
 
-    if (video == 0) {
+    var vid ;
+
+    useEffect(() => {
+        vid = document.getElementById("myVideo"); 
+    },[])
+
+    console.log("===========",vid);
+
+        const  playVid = () => { 
+            vid.play(); 
+        } 
+
+    const navigate = useNavigate()
+
+    const backToHome = () =>{
+        navigate('/')
+    }
+
+    if (count == 0) {
 
         return (
             <>
                 <div>
-                <div>
                     <div className="login-sec video">
                         <div className="cust-container">
-                            <video controls >
-                                <source src="videos/1.mp4" type="video/mp4" />
+                            <video controls id="myVideo">
+                                <source src="videos/1.mp4" type="video/mp4"  />
                                 Your browser does not support the video tag.
                             </video>
-                            <div className="heading-sec text-center">
-                                <button type="submit" className="btn btn-more" onClick={() => { setVideoCount(1) }} >White Paper</button>
+                            <div className='d-flex justify-content-between my-4'>
+                                <div className="heading-sec text-center">
+                                    <button type="submit" className="btn btn-more" onClick={() => backToHome()} >Back To Home </button>
+                                </div>
+                                <div className="heading-sec text-center">
+                                    <button className="btn btn-more" onClick={() => playVid()}>Play Video</button>
+                                </div>
+                                <div className="heading-sec text-center">
+                                    <button type="submit" className="btn btn-more" onClick={() => { handleCount(count) }} >White Paper</button>
+                                </div>
                             </div>
+                            
                             <img src="images/services.png" className="border-b" style={{ marginTop: "10px" }} />
+                            
                         </div>
                     </div>                  
-
-                </div>
 
                 </div>
             </>
@@ -83,9 +109,9 @@ export default function Bitcash() {
                                 Aldus PageMaker including versions of Lorem Ipsum.</p> */}
 
                                 <div className='d-flex justify-content-between'>
-                                    {count > 1 ? <div style={{ textAlign: 'left' }}> <button className="btn btn-more yy" onClick={() => { decrementCount(count) }}> Previous Page</button>  </div> : ""}
+                                    {count > 0 ? <div style={{ textAlign: 'left' }}> <button className="btn btn-more yy" onClick={() => { decrementCount(count) }}> Previous Page</button>  </div> : ""}
 
-                                    {count === 1 ? <div style={{ textAlign: 'right' }}> <button className="btn btn-more" onClick={() => { handleCount(count) }}>Next Page</button>  </div> : ""}
+                                    {count < 2 ? <div style={{ textAlign: 'right' }}> <button className="btn btn-more" onClick={() => { handleCount(count) }}>Next Page</button>  </div> : ""}
 
 
 

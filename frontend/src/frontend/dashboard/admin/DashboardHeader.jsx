@@ -1,17 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState ,useEffect } from "react";
 import Logo from "./assets/images/logo.png"
 import UserImg from "./assets/images/user-img.png"
 import "./assets/css/admin.css";
 import { API_URL } from "../../../Config";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,useLocation, Link } from 'react-router-dom';
+import { toast } from "react-toastify";
+
 
 export default function DashboardHeader() {
     let history = useNavigate();
+    let location = useLocation();
+
+    let HeaderName = location?.state?.name
+
     useEffect(() => {
-        setToggle(true)
-        if (localStorage.getItem("userToken") == null || localStorage.getItem("userToken") == undefined)
+        if (localStorage.getItem("isLogin") !== "true"){ 
             history("/login")
+        }
     }, [])
+
     const [toggle, setToggle] = useState(false);
     function handleToggle() {
         if (!toggle) {
@@ -24,6 +31,7 @@ export default function DashboardHeader() {
         }
         setToggle(!toggle)
     }
+
     async function handleLogout() {
         const option = {
             method: "GET",
@@ -39,20 +47,22 @@ export default function DashboardHeader() {
                 if (res.success) {
                     localStorage.removeItem("userEmail")
                     localStorage.removeItem("userToken")
+                    localStorage.clear()
                     history("/login")
+                    toast.success("Logout Success !!!");
                 }
             })
     }
     return (
         <header className="navbar theme-header">
             <div className="head-logo">
-                <a href="#" className="logo"><img src={Logo} alt="LOGO" /></a>
+                <Link to={'/dashboard'} state={{name: "Dashboard"}} className="logo"><img src={Logo} alt="LOGO" /></Link>
                 <button className="closeMenu_btn"><span className="toggle_icon"></span></button>
             </div>
             <div className="top-navs d-flex align-items-center">
                 <button className="btn_toggle" id="btn_toggle" onClick={() => handleToggle(toggle)}><span className="toggle_icon"></span></button>
                 <div className="dash-head-blk">
-                    <h3>Dashboard </h3>
+                    <h3>{HeaderName}</h3>
                 </div>
                 <div className="top-right ml-auto d-flex align-items-center">
                     <div className="header-setting d-flex align-items-center">

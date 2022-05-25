@@ -11,8 +11,8 @@ export default function PurchaseToken() {
     const [toAmount, setToAmount] = useState(0);
     const [fromAmount, setFromAmount] = useState(0);
     useEffect(() => {
-        document.title = "Admin :: Dashboard"
-        document.body.classList.add('menu-open');
+        document.title = "Dashboard"
+        // document.body.classList.add('menu-open');
     }, [])
 
     async function rateConvert(sendAmount) {
@@ -80,7 +80,7 @@ export default function PurchaseToken() {
                                                             </div>
                                                         </form>
                                                     </div>
-                                                    <Link to={fromAmount > 0 && from != to ? `/payments` : `/purchase-token`} state={{ amount: fromAmount, getAmount: toAmount, currency: from }}>
+                                                    <Link to={fromAmount > 0 && from != to ? `/payments` : `/purchase-token`} state={{ amount: fromAmount, getAmount: toAmount, currency: from , name:"Payment"}}>
                                                         <div className="btm-wallet">
                                                             <a href="#" className="btn btn-full" >Buy Tokens</a>
                                                         </div>
@@ -91,7 +91,7 @@ export default function PurchaseToken() {
                                         </div>
                                     </div>
                                     <div className="col-md-12">
-                                        <footer className="text-center">
+                                        <footer className="text-center copyRightMark">
                                             <p>&copy; Lindon ICO, 2021</p>
                                         </footer>
                                     </div>

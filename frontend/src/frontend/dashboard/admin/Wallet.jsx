@@ -6,8 +6,8 @@ import QRCode from "./assets/images/qrcode.png";
 
 export default function Wallet() {
     useEffect(() => {
-        document.title = "Admin :: Dashboard"
-        document.body.classList.add('menu-open');
+        document.title = "Dashboard"
+        // document.body.classList.add('menu-open');
     }, [])
     return (
         <div className="main-wrap">
@@ -41,7 +41,7 @@ export default function Wallet() {
                                         </div>
                                     </div>
                                     <div className="col-md-12">
-                                        <footer className="text-center">
+                                        <footer className="text-center copyRightMark">
                                             <p>&copy; Lindon ICO, 2021</p>
                                         </footer>
                                     </div>
