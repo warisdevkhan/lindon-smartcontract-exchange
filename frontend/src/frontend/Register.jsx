@@ -35,12 +35,14 @@ export default function Register() {
       toast.warn("Please Enter valid email");
     } else if (!password) {
       toast.warn("Please Enter Password");
+    }else if (password.length < 8) {
+      toast.warn("Password Must Contains 8 Characters");
     }
     else if (!confirmPassword) {
         toast.warn("Please Enter Confirm Password");
     }
      else if (password !== confirmPassword) {
-      toast.warn("Password not match");
+      toast.warn("Passwords Are Not Same");
     } else {
       const option = {
         method: "POST",
