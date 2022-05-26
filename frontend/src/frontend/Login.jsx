@@ -56,7 +56,7 @@ export default function Login({ setRole }) {
             localStorage.setItem("role", res.role);
             setRole(res.role);
             history("/dashboard");
-            toast.success("Login Success");
+            toast.success("Login Success !!!");
           } else {
             console.log(res);
             toast.error(res?.msg);

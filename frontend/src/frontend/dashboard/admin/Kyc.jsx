@@ -26,7 +26,7 @@ const Kyc = () => {
 
   useEffect(() => {
     document.title = "Admin :: Dashboard";
-    document.body.classList.add("menu-open");
+    // document.body.classList.add("menu-open");
   }, []);
 
   function changeColor(effect) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Footer from "./footer";
 import Header from "./header";
 import AOS from "aos";
@@ -8,6 +8,9 @@ export default function Ico() {
         document.getElementById("learn-btn").style.display = "none"
         document.getElementById("next-part").style.display = "block"
     }
+    useEffect(() => {
+        document.title = "Home";
+    }, []);
     return (
         <div>
             <Header activeHeader={"Ico"} />

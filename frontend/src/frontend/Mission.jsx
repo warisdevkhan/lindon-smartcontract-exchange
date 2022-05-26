@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "./header";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 export default function Mission() {
     AOS.init();
+    useEffect(() => {
+        document.title = "Mission";
+    }, []);
     return (
         <div className="bg-about-page">
             <div className="bg-about">
