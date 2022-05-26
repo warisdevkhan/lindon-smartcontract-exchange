@@ -30,11 +30,11 @@ const Kyc = () => {
   }, []);
 
   function changeColor(effect) {
-    if (effect == "bin")
+    if (effect === "bin")
       document.getElementById("bitpay-button").style.color = "#F1B820";
-    else if (effect == "bout")
+    else if (effect === "bout")
       document.getElementById("bitpay-button").style.color = "#212529";
-    else if (effect == "in")
+    else if (effect === "in")
       document.getElementById("stripe-button").style.color = "#F1B820";
     else document.getElementById("stripe-button").style.color = "#212529";
   }

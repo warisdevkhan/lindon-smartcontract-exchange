@@ -520,7 +520,21 @@
 	
 	}
 	
-	
+	@media only screen and (max-width: 991px){
+		.navbar-toggler-icon {
+			width: 24px !important;
+			height: 2px !important;
+			border: 2px solid #ffffff;
+			transition: .3s;
+			left: 0;
+			margin-top: -11px;
+			margin-right: 0;
+			margin-left: -12px;
+		}
+		header ul.navbar-nav li{
+			margin: 0 !important;
+		}
+		}
 	
 	
 	

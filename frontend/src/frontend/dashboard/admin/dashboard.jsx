@@ -8,16 +8,17 @@ import Green from "./assets/images/green.png";
 import Card from "./components/Card";
 import axios from "axios";
 import { API_URL } from "../../../Config";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 export default function Dashboard() {
   const role = localStorage.getItem("role");
   const token = localStorage.getItem("userToken");
+  const navigate = useNavigate()
 
   const [userKycDetails, setUserKycDetails] = useState("");
   const [adminDashboardData , setAdminDashboardData] = useState('')
-
-
-  console.log("adminDashboardData==>",adminDashboardData);
 
   useEffect(() => {
     document.title = "Dashboard";
@@ -38,7 +39,6 @@ export default function Dashboard() {
 
       axios(config)
         .then(function (response) {
-          console.log(JSON.stringify(response.data));
           localStorage.setItem(
             "userKycStatus",
             response?.data?.user?.kycStatus
@@ -46,6 +46,11 @@ export default function Dashboard() {
           setUserKycDetails(response.data);
         })
         .catch(function (error) {
+          if (error.response.status === 401) {
+            toast.error("Unauthorized Access");
+            localStorage.clear()
+            navigate('/login')
+          }
           console.log(error);
         });
     } catch (error) {
@@ -68,10 +73,14 @@ export default function Dashboard() {
   
         axios(config)
           .then(function (response) {
-            // console.log(JSON.stringify(response.data));
             setAdminDashboardData(response.data)
           })
           .catch(function (error) {
+            if (error.response.status === 401) {
+              toast.error("Unauthorized Access");
+              localStorage.clear()
+              navigate('/login')
+            }
             console.log(error);
           });
       } catch (error) {
@@ -140,86 +149,7 @@ export default function Dashboard() {
                   </div>
 
                   <div className="col-md-12">
-                    {/* <div className="table-sec">
-                            <table className="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Transactions</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"><a href="#">View all</a></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Date</th>
-                                        <th>Amount</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <td>Derrick Hilton</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fatimah Dupont</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nur Gallegos</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Giacomo Bowes</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kavita Mayer</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tobey Evans</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Liliana Huber</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kavita Mayer</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tobey Evans</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Liliana Huber</td>
-                                        <td>11/05/2021</td>
-                                        <td>$ 250.00</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div> */}
+                   
                   </div>
 
                   <div className="col-md-12">

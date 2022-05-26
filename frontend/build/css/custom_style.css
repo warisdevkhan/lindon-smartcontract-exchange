@@ -484,6 +484,13 @@ header ul.navbar-nav li.nav-item.active a, header ul.navbar-nav li.nav-item  a:h
 }
 
 
+.copyRightMark{
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+}
+
 
 #nav-top {width: 100%;justify-content: space-between !important;}
 
