@@ -60,14 +60,15 @@ app.use('*', (req, res) => {
 
 const PORT = process.env.PORT 
 
-// connectToDatabase().then(_ => {
-//   app.listen(PORT, _ => {
-//     console.log(`Server started on port ${PORT}`)
-//   })
-// })
+var httpsServer = https.createServer(credentials ,app);
+connectToDatabase().then(_ => {
+   httpsServer.listen(PORT, _ => {
+     console.log(`Server started on port ${PORT}`)
+   })
+})
 
 
-var httpsServer = https.createServer(credentials, app);
+//var httpsServer = https.createServer(credentials, app);
 
 
-httpsServer.listen(PORT);
+//httpsServer.listen(PORT);
