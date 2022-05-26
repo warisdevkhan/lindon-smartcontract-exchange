@@ -24,7 +24,9 @@ var credentials = {key: privateKey, cert: certificate};
 
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
-app.use(cors());
+app.use(cors({
+   origin: '*'
+}));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
