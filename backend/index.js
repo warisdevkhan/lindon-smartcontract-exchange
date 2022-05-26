@@ -13,6 +13,15 @@ const bodyParser = require('body-parser')
 const path = require('path');
 
 
+var fs = require('fs');
+var http = require('http');
+var https = require('https');
+var privateKey  = fs.readFileSync('/etc/ssl/private.key', 'utf8');
+var certificate = fs.readFileSync('/etc/ssl/fullchain.pem', 'utf8');
+var credentials = {key: privateKey, cert: certificate};
+
+
+
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 app.use(cors());
@@ -47,12 +56,16 @@ app.use('*', (req, res) => {
   })
 })
 
-// app.use(errorMiddleware)
+const PORT = process.env.PORT 
 
-const PORT = process.env.PORT || 3009
+// connectToDatabase().then(_ => {
+//   app.listen(PORT, _ => {
+//     console.log(`Server started on port ${PORT}`)
+//   })
+// })
 
-connectToDatabase().then(_ => {
-  app.listen(PORT, _ => {
-    console.log(`Server started on port ${PORT}`)
-  })
-})
+
+var httpsServer = https.createServer(credentials, app);
+
+
+httpsServer.listen(PORT);
