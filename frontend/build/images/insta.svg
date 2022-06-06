@@ -1,0 +1,11 @@
+<svg id="instagram-logo-fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.527" height="27.527" viewBox="0 0 27.527 27.527">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1b820"/>
+      <stop offset="1" stop-color="#f5cd4f"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_2368" data-name="Path 2368" d="M0,0H27.527V27.527H0Z" fill="none"/>
+  <circle id="Ellipse_2485" data-name="Ellipse 2485" cx="3.338" cy="3.338" r="3.338" transform="translate(10.422 10.318)" fill="url(#linear-gradient)"/>
+  <path id="Path_2369" data-name="Path 2369" d="M43.484,28H34.021A6.028,6.028,0,0,0,28,34.021v9.462a6.028,6.028,0,0,0,6.021,6.021h9.462a6.028,6.028,0,0,0,6.021-6.021V34.021A6.028,6.028,0,0,0,43.484,28ZM38.753,43.914a5.161,5.161,0,1,1,5.161-5.161A5.161,5.161,0,0,1,38.753,43.914Zm5.591-9.462a1.29,1.29,0,1,1,1.29-1.29A1.29,1.29,0,0,1,44.344,34.452Z" transform="translate(-24.989 -24.989)" fill="url(#linear-gradient)"/>
+</svg>
