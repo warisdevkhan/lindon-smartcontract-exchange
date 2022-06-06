@@ -989,6 +989,12 @@ footer.footer {
     text-align: justify;
 }
 
+.counter-sec{
+    position: relative;
+    padding: 100px 0 50px;
+    background: url(../images/bg.png)
+}
+
 
 @media (max-width: 600px) {
     .video-block2 {
