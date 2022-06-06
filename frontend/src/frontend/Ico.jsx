@@ -151,7 +151,7 @@ export default function Ico() {
         </div>
       </div>
 
-      <section className="counter-sec ">
+      <section className="counter-sec">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-12">

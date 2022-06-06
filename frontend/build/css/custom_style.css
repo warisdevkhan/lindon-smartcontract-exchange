@@ -992,7 +992,7 @@ footer.footer {
 .counter-sec{
     position: relative;
     padding: 100px 0 50px;
-    background-image: url(../images/bg.png)
+    background-image: url("../images/bg.png")
 }
 
 .flip-countdown.size-small .flip-countdown-piece{
