@@ -21,6 +21,9 @@ import PrivacyPolicy from "./frontend/PrivacyPolicy";
 import Faq from "./frontend/Faq";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ForgetPassword from './frontend/ForgetPassword';
+import VerifyEmail from './frontend/VerifyEmail';
+import NewPassword from './frontend/NewPassword';
 
 function App() {
   const [role, setRole] = useState(localStorage.getItem("role"));
@@ -33,6 +36,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ico" element={<Ico />} />
           <Route path="/login" element={<Login setRole={setRole} />} />
+          <Route path="/verify-email" element={<VerifyEmail />} />
+          <Route path="/forget-password" element={<ForgetPassword />} />
+          <Route path="/generate-new-password" element={<NewPassword />} />
           <Route path="/register" element={<Register />} />
           <Route path="/mission" element={<Mission />} />
           <Route path="/term-of-use" element={<TermOfUse />} />

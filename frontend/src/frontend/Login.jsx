@@ -114,6 +114,9 @@ export default function Login({ setRole }) {
                   Submit
                 </button>
                 <p>
+                  <Link to="/forget-password">Forget Password</Link>
+                </p>
+                <p>
                   Don't Have An Account?{" "}
                   <Link to="/register">Registration Now</Link>
                 </p>

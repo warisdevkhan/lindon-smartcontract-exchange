@@ -42,4 +42,10 @@ router.post(
 */
 router.get('/logout',auth, userController.logout)
 
+router.get('/verify-email', userController.verifyEmail)
+
+router.post('/forget-password',userMiddleware.validate('forget-password'), userController.forgetPassword)
+
+router.post('/create-new-password', userController.generateNewPassword)
+
 module.exports = router

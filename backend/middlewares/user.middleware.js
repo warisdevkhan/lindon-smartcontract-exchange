@@ -32,5 +32,12 @@ exports.validate = (method) => {
           .isLength({ min: 8 }),
         ]
       }
+    case 'forget-password':
+      {
+        return [
+          check('email', 'Email required').exists().trim().isEmail(),
+
+        ]
+      }
   }
 }
