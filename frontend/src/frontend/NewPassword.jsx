@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "./header";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { API_URL } from "../Config";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";

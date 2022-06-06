@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "./header";
 import { Link, useLocation } from "react-router-dom";
 import { API_URL } from "../Config";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function ForgetPassword({ setRole }) {
@@ -49,7 +48,7 @@ export default function ForgetPassword({ setRole }) {
         <div>
             <Header activeHeader={""} />
             <div className="header-btm">
-                <img src="images/header.png" alt="header-image"></img>
+                <img src="images/header.png" alt="header-image" />
             </div>
             <div className="login-sec2">
                 <div className="cust-container cust-container-login">

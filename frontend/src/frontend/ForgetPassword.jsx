@@ -20,7 +20,7 @@ export default function ForgetPassword({ setRole }) {
       );
   };
 
-  async function handleLogin(event) {
+  async function handleForget(event) {
     event.preventDefault();
     if (!email) {
       toast.warn("Please Enter email");
@@ -54,7 +54,7 @@ export default function ForgetPassword({ setRole }) {
   }
   return (
     <div>
-      <Header activeHeader={"Login"} />
+      <Header activeHeader={"forget"} />
       <div className="header-btm">
         <img src="images/header.png" alt="header-image"></img>
       </div>
@@ -86,7 +86,7 @@ export default function ForgetPassword({ setRole }) {
                 <button
                   type="submit"
                   className="btn btn-more"
-                  onClick={handleLogin}
+                  onClick={handleForget}
                 >
                   Submit
                 </button>

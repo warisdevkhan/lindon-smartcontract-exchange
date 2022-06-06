@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
 import AOS from "aos";
+import FlipCountdown from "@rumess/react-flip-countdown";
 
 export default function Ico() {
   AOS.init();
@@ -158,7 +159,17 @@ export default function Ico() {
                 <div className="time-speed-sec">
                   <p>Pre-sale is Live Now</p>
                   <div className="time-speed d-flex flex-wrap align-items-center">
-                    <div className="time-fixed">
+                    <FlipCountdown
+                      hideYear
+                      hideMonth
+                      dayTitle="Days"
+                      hourTitle="Hours"
+                      minuteTitle="Minutes"
+                      secondTitle="Seconds"
+                      size={"small"}
+                      endAt={"2022-12-12 01:26:58"}
+                    />
+                    {/* <div className="time-fixed">
                       <h4 className="time-top">
                       02 <span className="text-bottom">Days</span>
                       </h4>
@@ -178,9 +189,9 @@ export default function Ico() {
                     </div>
                     <div className="time-fixed">
                       <h4 className="time-top">
-                        00 <span className="text-bottom">SECONDS</span>
+                      00 <span className="text-bottom">SECONDS</span>
                       </h4>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="speedo-meeter">
                     <div className="d-flex justify-content-between">
