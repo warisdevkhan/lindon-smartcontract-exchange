@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
         user: process.env.EMAIL_USER_NAME,
         pass: process.env.PASSWORD,
     },
-    secureConnection: 'false',
+	secure: true,
     tls: {
         ciphers: 'SSLv3',
         rejectUnauthorized: false
@@ -42,7 +42,7 @@ exports.sendEmail = function (to, subject, body, attachments = false, html = fal
 
         transporter.sendMail(mailData, function (error, response) {
             if (error) {
-                console.log("-----ERROR-----");
+                console.log("-----ERROR-----" , error);
                 reject(false);
             }
             if (response) {
