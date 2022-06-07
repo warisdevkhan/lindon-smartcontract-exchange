@@ -60,7 +60,8 @@ export default function Register() {
           const res = await response.json();
           if (res.success === true) {
             toast.success(res?.msg);
-            history("/login");
+            toast.success("Please Check Your Email To Activate Your Account" ,{autoClose: 5000})
+            // history("/login");
           } else {
             console.log(res);
             toast.error(res?.msg);

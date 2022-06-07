@@ -44,6 +44,7 @@ export default function ForgetPassword({ setRole }) {
                         }
                         else{
                             console.log(res);
+                            toast.error(res?.msg);
                         }
 
                     })

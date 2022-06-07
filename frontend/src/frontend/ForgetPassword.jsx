@@ -42,7 +42,7 @@ export default function ForgetPassword({ setRole }) {
           const res = await response.json();
           if (res.success === true) {
             toast.success(
-              "Email to generate new password sent successfully !!!"
+              "Check Email To Generate New Password !!!"
             );
           } else {
             toast.error(res?.msg);
