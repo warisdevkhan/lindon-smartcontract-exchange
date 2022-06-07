@@ -1,20 +1,40 @@
-import React,{useEffect} from "react";
+import React,{useEffect , useState} from "react";
 import Footer from "./footer";
 import Header from "./header";
 import AOS from "aos";
 import { Link } from "react-router-dom";
+import AudioPlayer from 'react-h5-audio-player';
+import { useRef } from "react";
 export default function Home() {
     AOS.init();
     function learnMore() {
         document.getElementById("learn-btn").style.display = "none"
         document.getElementById("next-part").style.display = "block"
     }
+
+    const player = useRef();
+    const [playStatus, setPlayStatus] = useState(true);
+    
+    function togglePlay() {
+        if (!playStatus)
+            player.current.audio.current.play();
+        else
+            player.current.audio.current.pause();
+    }
+
     useEffect(() => {
         document.title = "Home";
       }, []);
     return (
         <div>
             <div id="particles-js" />
+            <AudioPlayer
+                autoPlay
+                src={"videos/new-websong.mp3"}
+                style={{ display: "none" }}
+                loop={true}
+                ref={player}
+            />
             {/* header */}
             <header>
                 <nav className="navbar navbar-expand-lg">
@@ -68,8 +88,21 @@ export default function Home() {
                                 <li><a href="#"><img src="images/facebook.svg" /></a></li>
                                 <li><a href="#"><img src="images/twitter-y.svg" /></a></li>
                                 <li><a href="#"><img src="images/insta.svg" /></a></li>
-                                <li><audio id="myAudio" src="videos/new-websong.mp3" autoPlay />
-                                    <a className="play"><span className="mute"><i className="fa fa-volume-down" /><i className="fa fa-volume-mute" /></span></a></li>
+                                <li>
+                                <a onClick={() => togglePlay(!playStatus)} className="play">
+                                    {
+                                        playStatus ?
+                                            <span className="mute">
+                                                <i className="fa fa-volume-down" onClick={() => setPlayStatus(!playStatus)}></i>
+                                            </span>
+                                            :
+                                            <span className="mute" >
+                                                <i className="fa fa-volume-mute" style={{ display: "block" }} onClick={() => setPlayStatus(true)}></i>
+                                            </span>
+                                    }
+                                </a>
+                                
+                                    </li>
                             </ul>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { API_URL } from "../Config";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 export default function ForgetPassword({ setRole }) {
   let history = useNavigate();
@@ -91,7 +92,10 @@ export default function ForgetPassword({ setRole }) {
                   Submit
                 </button>
                 <p>
-                  <Link to="/login">Back To Login</Link>
+                  <Link to="/login">
+                    <KeyboardBackspaceIcon />
+                    Back To Login
+                  </Link>
                 </p>
               </form>
             </div>

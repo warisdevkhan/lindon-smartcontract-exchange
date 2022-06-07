@@ -1,9 +1,20 @@
-import React,{useEffect} from "react";
+import React,{useEffect , useState} from "react";
 import Header from "./header";
 import AOS from "aos";
+import AudioPlayer from 'react-h5-audio-player';
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 export default function Mission() {
     AOS.init();
+    const player = useRef();
+    const [playStatus, setPlayStatus] = useState(true);
+    
+    function togglePlay() {
+        if (!playStatus)
+            player.current.audio.current.play();
+        else
+            player.current.audio.current.pause();
+    }
     useEffect(() => {
         document.title = "Mission";
     }, []);
@@ -22,6 +33,13 @@ export default function Mission() {
  */}
             {/* header */}
             <header>
+            <AudioPlayer
+                autoPlay
+                src={"videos/new-websong.mp3"}
+                style={{ display: "none" }}
+                loop={true}
+                ref={player}
+            />
                 <nav className="navbar navbar-expand-lg">
                     <div className="container">
                         <Link className="navbar-brand p-0" to="/"><img src="images/Logo.png" /></Link>
@@ -74,8 +92,22 @@ export default function Mission() {
                                 <li><a href="#"><img src="images/facebook.svg" /></a></li>
                                 <li><a href="#"><img src="images/twitter-y.svg" /></a></li>
                                 <li><a href="#"><img src="images/insta.svg" /></a></li>
-                                <li><audio id="myAudio" src="videos/new-websong.mp3" autoPlay />
-                                    <a className="play"><span className="mute"><i className="fa fa-volume-down" /><i className="fa fa-volume-mute" /></span></a></li>
+                                <li>
+
+                                <a onClick={() => togglePlay(!playStatus)} className="play">
+                                    {
+                                        playStatus ?
+                                            <span className="mute">
+                                                <i className="fa fa-volume-down" onClick={() => setPlayStatus(!playStatus)}></i>
+                                            </span>
+                                            :
+                                            <span className="mute" >
+                                                <i className="fa fa-volume-mute" style={{ display: "block" }} onClick={() => setPlayStatus(true)}></i>
+                                            </span>
+                                    }
+                                </a>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
